@@ -3,6 +3,11 @@ html(lang="en")
   head
     title= title
   meta(name="viewport", content="width=device-width, initial-scale=1")
+  meta(http-equiv="X-UA-Compatible", content="IE=edge")
+  script(src="https://www.paypal.com/sdk/js?client-id=Ab--raJCbvkn4IEVyJP70M8RGJkNbPQQnhpJK4CiUumArOZvhP1ae3g8mJdJAO_HNat-X1PZNhwREDaR")
   body
-    h1 Hello World
+    header(style="height: 180px;background-color: ") Hello World
     p This is a Koa framework starter template
+    div(id="paypal-button-container", style="width: 320px")
+  script.
+    paypal.Buttons().render('#paypal-button-container');

@@ -1,15 +1,22 @@
 import Koa from 'koa';
-import Pug from 'koa-pug';
+import Router from 'koa-router';
+import path from 'path';
+import views from 'koa-views';
+import bodyParser from 'koa-bodyparser';
+
+import HomeController from './controller';
 
 const app = new Koa();
+const router = new Router();
 
-const config = {
-  locals: {
-    title: 'Koa Starter Template'
-  }
-};
-const pug = new Pug(Object.assign({}, config, { viewPath: './server/views/' }));
-pug.use(app);
-pug.render('index');
+router.get('/', HomeController);
 
-app.listen(3000);
+app.use(bodyParser());
+
+app.use(views(path.join(__dirname, './views'), { extension: 'pug' }));
+
+app.use(router.routes()).use(router.allowedMethods())
+
+app.listen(3000, () => {
+  console.log('App is starting at port 3000');
+});
