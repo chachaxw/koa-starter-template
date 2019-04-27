@@ -1,0 +1,9 @@
+# development 开发模式
+development:
+  apiServer : 'http://localhost'
+  port: 3000
+
+# production 生产模式
+production:
+  apiServer : 'http://example.com'
+  port: 3030
