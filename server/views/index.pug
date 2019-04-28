@@ -4,10 +4,8 @@ html(lang="en")
     title= title
   meta(name="viewport", content="width=device-width, initial-scale=1")
   meta(http-equiv="X-UA-Compatible", content="IE=edge")
-  script(src="https://www.paypal.com/sdk/js?client-id=Ab--raJCbvkn4IEVyJP70M8RGJkNbPQQnhpJK4CiUumArOZvhP1ae3g8mJdJAO_HNat-X1PZNhwREDaR")
-  body
-    header(style="height: 180px;background-color: ") Hello World
-    p This is a Koa framework starter template
-    div(id="paypal-button-container", style="width: 320px")
-  script.
-    paypal.Buttons().render('#paypal-button-container');
+  link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.8.1/css/all.css")
+  link(rel="icon", href="images/favicon.ico", type="image/x-icon")
+  body(style="display: flex; flex-direction: column; height: 100vh; align-items: center; justify-content: center; background-color: #f8f8f8")
+    h1 Koa Stater Template
+    p= title
