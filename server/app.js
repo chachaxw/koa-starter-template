@@ -7,11 +7,12 @@ import bodyParser from 'koa-bodyparser';
 import koaStatic from 'koa-static';
 import koaSession from 'koa-session';
 
-import HomeController from './controller';
+import router from './router';
+import { logger } from './middleware';
 import db from './db';
 
 const app = new Koa();
-const router = new Router();
+const port = process.env.PORT || 3000;
 
 // 静态资源目录对于相对入口文件index.js的路径
 const staticPath = '../public';
@@ -24,8 +25,6 @@ const sessionConfig = {
 
 db.useDb();
 
-router.get('/', HomeController);
-
 app.use(bodyParser());
 
 app.use(views(path.join(__dirname, './views'), { extension: 'pug' }));
@@ -36,6 +35,9 @@ app.use(koaStatic(path.join( __dirname,  staticPath)));
 
 app.use(koaSession(sessionConfig, app));
 
-app.listen(3000, () => {
-  console.log(chalk.green('App is starting at port 3000'));
+// Middleware
+logger(app);
+
+app.listen(port, () => {
+  console.log(chalk.green(`[Koa] App is starting at port ${port}`));
 });
