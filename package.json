@@ -5,15 +5,14 @@
   "author": "chacha",
   "scripts": {
     "dev": "nodemon ./server/app.js development --delay 1.5 --watch",
-    "prod": "nodemon ./server/app.js production --watch",
-    "build": "node build/build.js"
+    "prod": "nodemon ./server/app.js production --watch"
   },
   "dependencies": {
     "axios": "^0.19.0",
     "connect-mongo": "^3.0.0",
     "formidable": "^1.2.1",
     "js-yaml": "^3.12.2",
-    "koa": "^2.7.0",
+    "koa": "^2.8.1",
     "koa-bodyparser": "^4.2.1",
     "koa-convert": "^1.2.0",
     "koa-helmet": "^5.1.0",
@@ -32,7 +31,7 @@
     "mongoose": "^5.6.9",
     "paypal-rest-sdk": "^1.8.1",
     "pug": "^2.0.4",
-    "qs": "^6.6.0",
+    "qs": "^6.8.0",
     "v-tooltip": "^2.0.1",
     "vue": "^2.6.8",
     "vue-awesome": "^3.5.4",
@@ -53,6 +52,7 @@
     "@vue/babel-preset-app": "^3.10.0",
     "autoprefixer": "^9.6.1",
     "babel-loader": "^8.0.6",
+    "babel-node": "0.0.1-security",
     "babel-plugin-component": "^1.1.1",
     "chalk": "^2.4.1",
     "copy-webpack-plugin": "^5.0.4",
@@ -62,7 +62,6 @@
     "friendly-errors-webpack-plugin": "^1.7.0",
     "html-webpack-plugin": "^3.2.0",
     "mini-css-extract-plugin": "^0.8.0",
-    "mockjs": "^1.0.1-beta3",
     "node-sass": "^4.11.0",
     "nodemon": "^1.19.1",
     "optimize-css-assets-webpack-plugin": "^5.0.3",
@@ -87,7 +86,7 @@
     "webpack-merge": "^4.2.1"
   },
   "engines": {
-    "node": ">= 7.0.0",
+    "node": ">= 8.9.1",
     "npm": ">= 3.0.0"
   },
   "browserslist": [

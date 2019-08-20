@@ -1,6 +1,5 @@
 import Koa from 'koa';
 import chalk from 'chalk';
-import Router from 'koa-router';
 import path from 'path';
 import views from 'koa-views';
 import bodyParser from 'koa-bodyparser';
