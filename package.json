@@ -50,7 +50,7 @@
     "@babel/preset-env": "^7.5.5",
     "@babel/register": "^7.5.5",
     "@babel/runtime": "^7.5.5",
-    "@vue/babel-preset-app": "^3.10.0",
+    "@vue/babel-preset-app": "^3.11.0",
     "autoprefixer": "^9.6.1",
     "babel-loader": "^8.0.6",
     "babel-node": "0.0.1-security",
@@ -71,7 +71,7 @@
     "postcss-loader": "^3.0.0",
     "postcss-url": "^8.0.0",
     "rimraf": "^3.0.0",
-    "sass-loader": "^7.2.0",
+    "sass-loader": "^8.0.0",
     "semver": "^6.3.0",
     "shelljs": "^0.8.3",
     "terser-webpack-plugin": "^1.4.1",
@@ -79,12 +79,12 @@
     "vue-loader": "^15.7.1",
     "vue-style-loader": "^4.1.2",
     "vue-template-compiler": "^2.6.8",
-    "webpack": "^4.39.2",
+    "webpack": "^4.39.3",
     "webpack-bundle-analyzer": "^3.4.1",
     "webpack-dev-middleware": "^3.7.0",
     "webpack-hot-middleware": "^2.25.0",
     "webpack-manifest-plugin": "^2.0.4",
-    "webpack-merge": "^4.2.1"
+    "webpack-merge": "^4.2.2"
   },
   "engines": {
     "node": ">= 8.9.1",
