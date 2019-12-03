@@ -2,9 +2,14 @@
 
 > A nodeJS framework starter template with Koa
 
+![Github Issues](https://img.shields.io/github/issues/chachaxw/koa-starter-template)
+![Github Forks](https://img.shields.io/github/forks/chachaxw/koa-starter-template)
+![Github Stars](https://img.shields.io/github/stars/chachaxw/koa-starter-template)
+![Github License](https://img.shields.io/github/license/chachaxw/koa-starter-template)
+
 ## Architecture
 
-```text
+```Javascript
 .
 ├── server                                      # 服务端(koa,nodejs)
 │    ├── controller                             # Controllers
