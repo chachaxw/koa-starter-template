@@ -25,7 +25,7 @@
     "koa-static": "^5.0.0",
     "koa-views": "^6.1.5",
     "koa-webpack": "^5.2.4",
-    "log4js": "^6.1.0",
+    "log4js": "^6.4.0",
     "minireset.css": "0.0.6",
     "moment": "^2.24.0",
     "mongodb": "^3.4.1",
